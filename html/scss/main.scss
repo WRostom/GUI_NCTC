@@ -1,0 +1,173 @@
+$actionBlock_bgcolor: #fff;
+@font-face {
+    font-family: Roboto_Slab;
+    src: url('../fonts/Roboto_Slab/RobotoSlab-Regular.ttf');
+}
+
+@font-face {
+    font-family: RobotoThin;
+    src: url('../fonts/Roboto/RobotoThin.ttf');
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url('../fonts/Roboto/RobotoRegular.ttf');
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+p {
+    font-family: RobotoRegular;
+    pointer-events: none;
+}
+
+table {
+    width: 100%; // border: 1px solid red;
+    table-layout: auto;
+    height: 100%;
+    padding-top: 65px;
+}
+
+tr {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+td {
+    border: 1px solid rgba(20%, 20%, 20%, 0.8);
+    width: 70px;
+    height: 50px;
+    background-color: #2196f3;
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    cursor: pointer;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border: 0px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.loopBlock {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #7C4DFF;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loopButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #7C4DFF;
+    color: white;
+}
+
+.functionButton {
+    background-color: #FF3D00;
+    color: white;
+    width: 60px;
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.functionBlock {
+    width: 60px;
+    font-size: 12px;    
+    border-radius: 3px;
+    height: 50px;
+    background-color: #FF3D00;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loopBlock p {
+    text-align: center;
+    font-family: RobotoRegular;
+    font-size: 15px;
+}
+
+#topBar {
+    background-color: #ffd740;
+    position: fixed;
+    width: 100%;
+    height: 65px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    input[type='button'] {
+        // width: 100px;
+        height: 50px;
+        margin: 5px;
+        margin-bottom: 10px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        border: 0px;
+        text-align: center;
+        cursor: pointer; // border-radius: 3px;
+        font-family: RobotoRegular;
+        font-size: 15px;
+    }
+    .actionButton {
+        background-color: $actionBlock_bgcolor;
+        border-radius: 3px;
+        width: 100px;
+    }
+    #mainCommands {
+        position: relative;
+        float: right;
+        img {
+            pointer-events: none;
+        }
+        .runButton {
+            background-color: #00e676;
+            border-radius: 100px;
+        }
+        .uploadButton {
+            background-color: #ffdc01;
+        }
+        .bootButton {
+            background-color: #ff1744;
+            border-radius: 100px;
+        }
+    }
+}
+
+.actionBlock {
+    width: 100px;
+    height: 50px;
+    background-color: $actionBlock_bgcolor;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionBlock p {
+    text-align: center;
+    font-family: RobotoRegular;
+    font-size: 15px;
+}
+
+
+/*# sourceMappingURL=main.css.map */
